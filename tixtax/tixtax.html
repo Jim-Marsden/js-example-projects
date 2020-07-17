@@ -1,12 +1,56 @@
 <html lang="en">
-    <head>
-        <title>
-            Swifty learnings
-        </title>
-    </head>
+<head>
+    <title>
+        Swifty learnings
+    </title>
+    <link rel="stylesheet" href="tixtax.css">
+</head>
 <body>
-<script src="tixtax.js" type="javascript"></script>
+<script src="./tixtax.js" type="text/javascript"></script>
 
-<p id="p1">Hello World!</p>
+<!--
+<button onclick="generic_onclick2(p1)" , id="button1">Not pressed yet</button>
+<button onclick="generic_onclick('div1')" , id="button2">Not pressed yet</button>
+-->
+<table id="game_board">
+    <tr class="top">
+        <td>
+            <button id="top_left" onclick="board_buttons_onclick(0, 0, 'x', top_left)">Hai</button>
+        </td>
+        <td>
+            <button id="top_middle" onclick="board_buttons_onclick(0, 1, 'x', top_middle)">Hai</button>
+
+        </td>
+        <td>
+            <button id="top_right" onclick="board_buttons_onclick(0, 2, 'x', top_right)">Hai</button>
+        </td>
+    </tr>
+    <tr class="middle">
+        <td>
+            <button id="middle_left" onclick="board_buttons_onclick(1, 0, 'x', middle_left)">Hai</button>
+        </td>
+        <td>
+            <button id="middle_middle" onclick="board_buttons_onclick(1, 1, 'x', middle_middle)">Hai</button>
+
+        </td>
+        <td>
+            <button id="middle_right" onclick="board_buttons_onclick(1, 2, 'x', middle_right)">Hai</button>
+        </td>
+    </tr>
+    <tr class="bottom">
+        <td>
+            <button id="bottom_left" onclick="board_buttons_onclick(1, 0, 'x', bottom_left)">Hai</button>
+        </td>
+        <td>
+            <button id="bottom_middle" onclick="board_buttons_onclick(1, 1, 'x', bottom_middle)">Hai</button>
+
+        </td>
+        <td>
+            <button id="bottom_right" onclick="board_buttons_onclick(1, 2, 'x', bottom_right)">Hai</button>
+        </td>
+
+
+</table>
+
 </body>
 </html>
